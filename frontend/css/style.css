@@ -11,9 +11,9 @@ body {
 }
 
 .container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 40px auto;
+    width: 95%;
+    max-width: 1400px;
+    margin: 30px auto;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 12px;
@@ -53,4 +53,75 @@ header h1 {
     padding: 20px;
     background-color: #f9fafb;
     border-radius: 10px;
+}
+
+.painel-duplo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.bloco-financeiro {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.bloco-financeiro h2 {
+    margin-bottom: 20px;
+}
+
+.bloco-financeiro h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+.bloco-financeiro label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.bloco-financeiro input,
+.bloco-financeiro select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.divida-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.botao-adicionar {
+    margin-top: 10px;
+    padding: 10px 14px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.total-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+@media (max-width: 900px) {
+    .painel-duplo {
+        grid-template-columns: 1fr;
+    }
 }
