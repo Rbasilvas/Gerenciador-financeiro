@@ -1,0 +1,34 @@
+[
+  {
+    "nome": "",
+    "mes": "string",
+    "salario": 0,
+    "extras": 0,
+    "decimo": 0,
+    "plr": 0,
+    "ferias": 0,
+    "investimento": 0,
+    "dividas": [
+      {
+        "descricao": "string",
+        "parcelas": 0
+      }
+    ]
+  },
+  {
+    "nome": "",
+    "mes": "string",
+    "salario": 0,
+    "extras": 0,
+    "decimo": 0,
+    "plr": 0,
+    "ferias": 0,
+    "investimento": 0,
+    "dividas": [
+      {
+        "descricao": "string",
+        "parcelas": 0
+      }
+    ]
+  }
+]
