@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciador Financeiro</title>
+    <title>Nexus Finance</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -22,6 +22,7 @@
 
             <section class="conteudo">
                 <div class="painel-duplo">
+
                     <div class="bloco-financeiro">
                         <h2 id="titulo-pessoa1">Novo Perfil</h2>
 
@@ -45,6 +46,7 @@
                         </select>
 
                         <h3>Entradas</h3>
+
                         <label for="salario1">Salário</label>
                         <input type="number" id="salario1" placeholder="0.00">
 
@@ -60,6 +62,17 @@
                         <label for="ferias1">Férias</label>
                         <input type="number" id="ferias1" placeholder="0.00">
 
+                        <div class="entrada-item escondido" id="entradaExtraBox1">
+                            <input type="text" placeholder="Descrição da entrada extra">
+                            <input type="number" id="entradaExtraValor1" placeholder="Valor">
+                        </div>
+
+                        <button class="botao-adicionar" type="button" id="botaoEntrada1">+ Entradas</button>
+
+                        <div class="resumo-box" id="totalEntradas1">
+                            <strong>Total de entradas:</strong> R$ 0,00
+                        </div>
+
                         <h3>Investimento</h3>
                         <label for="investimento1">Valor investido</label>
                         <input type="number" id="investimento1" placeholder="0.00">
@@ -67,7 +80,7 @@
                         <h3>Dívidas</h3>
                         <div class="divida-item">
                             <input type="text" placeholder="Descrição da dívida">
-                            <input type="number" placeholder="Valor">
+                            <input type="number" id="dividaValor1" placeholder="Valor">
                             <select>
                                 <option value="0">0 parcelas</option>
                                 <option value="1">1 parcela</option>
@@ -78,10 +91,14 @@
                             </select>
                         </div>
 
-                        <button class="botao-adicionar">+ Adicionar dívida</button>
+                        <button class="botao-adicionar" type="button">+ Adicionar dívida</button>
 
-                        <div class="total-box">
-                            <strong>Total:</strong> R$ 0,00
+                        <div class="resumo-box" id="totalDividas1">
+                            <strong>Total de dívidas:</strong> R$ 0,00
+                        </div>
+
+                        <div class="total-box" id="total1">
+                            <strong>Total geral:</strong> R$ 0,00
                         </div>
                     </div>
 
@@ -105,10 +122,10 @@
                             <option>Outubro</option>
                             <option>Novembro</option>
                             <option>Dezembro</option>
-                            <option>Dezembro</option>
                         </select>
 
                         <h3>Entradas</h3>
+
                         <label for="salario2">Salário</label>
                         <input type="number" id="salario2" placeholder="0.00">
 
@@ -124,30 +141,46 @@
                         <label for="ferias2">Férias</label>
                         <input type="number" id="ferias2" placeholder="0.00">
 
+                        <div class="entrada-item escondido" id="entradaExtraBox2">
+                            <input type="text" placeholder="Descrição da entrada extra">
+                            <input type="number" id="entradaExtraValor2" placeholder="Valor">
+                        </div>
+
+                        <button class="botao-adicionar" type="button" id="botaoEntrada2">+ Entradas</button>
+
+                        <div class="resumo-box" id="totalEntradas2">
+                            <strong>Total de entradas:</strong> R$ 0,00
+                        </div>
+
                         <h3>Investimento</h3>
                         <label for="investimento2">Valor investido</label>
                         <input type="number" id="investimento2" placeholder="0.00">
 
                         <h3>Dívidas</h3>
                         <div class="divida-item">
-                             <input type="text" placeholder="Descrição da dívida">
-                             <input type="number" placeholder="Valor">
-                             <select>
-                                 <option value="0">0 parcelas</option>
-                                 <option value="1">1 parcela</option>
-                                 <option value="2">2 parcelas</option>
-                                 <option value="3">3 parcelas</option>
-                                 <option value="4">4 parcelas</option>
-                                 <option value="5">5 parcelas</option>
-                             </select>
+                            <input type="text" placeholder="Descrição da dívida">
+                            <input type="number" id="dividaValor2" placeholder="Valor">
+                            <select>
+                                <option value="0">0 parcelas</option>
+                                <option value="1">1 parcela</option>
+                                <option value="2">2 parcelas</option>
+                                <option value="3">3 parcelas</option>
+                                <option value="4">4 parcelas</option>
+                                <option value="5">5 parcelas</option>
+                            </select>
                         </div>
 
-                        <button class="botao-adicionar">+ Adicionar dívida</button>
+                        <button class="botao-adicionar" type="button">+ Adicionar dívida</button>
 
-                        <div class="total-box">
-                            <strong>Total:</strong> R$ 0,00
+                        <div class="resumo-box" id="totalDividas2">
+                            <strong>Total de dívidas:</strong> R$ 0,00
+                        </div>
+
+                        <div class="total-box" id="total2">
+                            <strong>Total geral:</strong> R$ 0,00
                         </div>
                     </div>
+
                 </div>
             </section>
         </main>

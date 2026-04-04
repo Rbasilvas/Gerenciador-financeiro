@@ -16,8 +16,8 @@ body {
     margin: 30px auto;
     background-color: #ffffff;
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
 }
 
 header {
@@ -26,7 +26,12 @@ header {
 }
 
 header h1 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 36px;
+}
+
+header p {
+    color: #4b5563;
 }
 
 .abas {
@@ -38,7 +43,7 @@ header h1 {
 .aba {
     border: none;
     padding: 12px 18px;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     background-color: #e5e7eb;
     font-weight: bold;
@@ -52,30 +57,33 @@ header h1 {
 .conteudo {
     padding: 20px;
     background-color: #f9fafb;
-    border-radius: 10px;
+    border-radius: 14px;
 }
 
 .painel-duplo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 24px;
+    align-items: start;
 }
 
 .bloco-financeiro {
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
-    border-radius: 12px;
+    border-radius: 14px;
     padding: 20px;
 }
 
 .bloco-financeiro h2 {
     margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .bloco-financeiro h3 {
-    margin-top: 20px;
+    margin-top: 22px;
     margin-bottom: 10px;
     color: #2563eb;
+    font-size: 18px;
 }
 
 .bloco-financeiro label {
@@ -83,14 +91,24 @@ header h1 {
     margin-top: 12px;
     margin-bottom: 6px;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .bloco-financeiro input,
 .bloco-financeiro select {
     width: 100%;
-    padding: 10px;
+    padding: 11px 12px;
     border: 1px solid #d1d5db;
-    border-radius: 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.entrada-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -102,26 +120,40 @@ header h1 {
 }
 
 .botao-adicionar {
-    margin-top: 10px;
+    margin-top: 8px;
     padding: 10px 14px;
     background-color: #2563eb;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.resumo-box {
+    margin-top: 14px;
+    padding: 14px;
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 16px;
 }
 
 .total-box {
-    margin-top: 20px;
-    padding: 15px;
+    margin-top: 18px;
+    padding: 16px;
     background-color: #eff6ff;
-    border: 1px solid #bfdbfe;
-    border-radius: 8px;
+    border: 1px solid #93c5fd;
+    border-radius: 10px;
     font-size: 18px;
+    font-weight: bold;
 }
 
 @media (max-width: 900px) {
     .painel-duplo {
         grid-template-columns: 1fr;
     }
+}
+.escondido {
+    display: none;
 }
