@@ -157,3 +157,6 @@ header p {
 .escondido {
     display: none;
 }
+.lista-item {
+    margin-bottom: 10px;
+}

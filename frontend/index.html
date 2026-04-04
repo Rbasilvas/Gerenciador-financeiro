@@ -62,10 +62,7 @@
                         <label for="ferias1">Férias</label>
                         <input type="number" id="ferias1" placeholder="0.00">
 
-                        <div class="entrada-item escondido" id="entradaExtraBox1">
-                            <input type="text" placeholder="Descrição da entrada extra">
-                            <input type="number" id="entradaExtraValor1" placeholder="Valor">
-                        </div>
+                        <div id="listaEntradas1"></div>
 
                         <button class="botao-adicionar" type="button" id="botaoEntrada1">+ Entradas</button>
 
@@ -78,21 +75,9 @@
                         <input type="number" id="investimento1" placeholder="0.00">
 
                         <h3>Dívidas</h3>
-                        <div class="divida-item">
-                            <input type="text" placeholder="Descrição da dívida">
-                            <input type="number" id="dividaValor1" placeholder="Valor">
-                            <select>
-                                <option value="0">0 parcelas</option>
-                                <option value="1">1 parcela</option>
-                                <option value="2">2 parcelas</option>
-                                <option value="3">3 parcelas</option>
-                                <option value="4">4 parcelas</option>
-                                <option value="5">5 parcelas</option>
-                            </select>
-                        </div>
-
-                        <button class="botao-adicionar" type="button">+ Adicionar dívida</button>
-
+                        <div id="listaDividas1"></div>
+                        <button class="botao-adicionar" type="button" id="botaoDivida1">+ Adicionar dívida</button>
+            
                         <div class="resumo-box" id="totalDividas1">
                             <strong>Total de dívidas:</strong> R$ 0,00
                         </div>
@@ -157,20 +142,8 @@
                         <input type="number" id="investimento2" placeholder="0.00">
 
                         <h3>Dívidas</h3>
-                        <div class="divida-item">
-                            <input type="text" placeholder="Descrição da dívida">
-                            <input type="number" id="dividaValor2" placeholder="Valor">
-                            <select>
-                                <option value="0">0 parcelas</option>
-                                <option value="1">1 parcela</option>
-                                <option value="2">2 parcelas</option>
-                                <option value="3">3 parcelas</option>
-                                <option value="4">4 parcelas</option>
-                                <option value="5">5 parcelas</option>
-                            </select>
-                        </div>
-
-                        <button class="botao-adicionar" type="button">+ Adicionar dívida</button>
+                        <div id="listaDividas2"></div>
+                        <button class="botao-adicionar" type="button" id="botaoDivida2">+ Adicionar dívida</button>
 
                         <div class="resumo-box" id="totalDividas2">
                             <strong>Total de dívidas:</strong> R$ 0,00
