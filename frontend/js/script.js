@@ -30,8 +30,11 @@ const listaDividas1 = document.getElementById("listaDividas1");
 const listaDividas2 = document.getElementById("listaDividas2");
 
 const botaoEntrada1 = document.getElementById("botaoEntrada1");
+const botaoRemoverEntrada1 = document.getElementById("botaoRemoverEntrada1");
 const botaoEntrada2 = document.getElementById("botaoEntrada2");
+
 const botaoDivida1 = document.getElementById("botaoDivida1");
+const botaoRemoverDivida1 = document.getElementById("botaoRemoverDivida1");
 const botaoDivida2 = document.getElementById("botaoDivida2");
 
 function atualizarTitulo(campo, titulo) {
@@ -199,6 +202,13 @@ botaoEntrada1.addEventListener("click", function () {
     listaEntradas1.appendChild(novoCampo);
 });
 
+botaoRemoverEntrada1.addEventListener("click", function () {
+    if (listaEntradas1.lastElementChild) {
+        listaEntradas1.removeChild(listaEntradas1.lastElementChild);
+        calcularPerfil1();
+    }
+});
+
 botaoEntrada2.addEventListener("click", function () {
     const novoCampo = criarCampoEntrada(2);
     listaEntradas2.appendChild(novoCampo);
@@ -207,6 +217,13 @@ botaoEntrada2.addEventListener("click", function () {
 botaoDivida1.addEventListener("click", function () {
     const novaDivida = criarCampoDivida(1);
     listaDividas1.appendChild(novaDivida);
+});
+
+botaoRemoverDivida1.addEventListener("click", function () {
+    if (listaDividas1.lastElementChild) {
+        listaDividas1.removeChild(listaDividas1.lastElementChild);
+        calcularPerfil1();
+    }
 });
 
 botaoDivida2.addEventListener("click", function () {
