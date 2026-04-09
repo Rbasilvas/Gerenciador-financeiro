@@ -32,10 +32,12 @@ const listaDividas2 = document.getElementById("listaDividas2");
 const botaoEntrada1 = document.getElementById("botaoEntrada1");
 const botaoRemoverEntrada1 = document.getElementById("botaoRemoverEntrada1");
 const botaoEntrada2 = document.getElementById("botaoEntrada2");
+const botaoRemoverEntrada2 = document.getElementById("botaoRemoverEntrada2");
 
 const botaoDivida1 = document.getElementById("botaoDivida1");
 const botaoRemoverDivida1 = document.getElementById("botaoRemoverDivida1");
 const botaoDivida2 = document.getElementById("botaoDivida2");
+const botaoRemoverDivida2 = document.getElementById("botaoRemoverDivida2");
 
 function atualizarTitulo(campo, titulo) {
     const nome = campo.value.trim();
@@ -68,6 +70,7 @@ function criarCampoEntrada(numeroPerfil) {
     `;
 
     const campoValor = div.querySelector(`.entrada-extra-valor-${numeroPerfil}`);
+
     campoValor.addEventListener("input", function () {
         if (numeroPerfil === 1) {
             calcularPerfil1();
@@ -104,6 +107,7 @@ function criarCampoDivida(numeroPerfil) {
     `;
 
     const campoValor = div.querySelector(`.divida-valor-${numeroPerfil}`);
+
     campoValor.addEventListener("input", function () {
         if (numeroPerfil === 1) {
             calcularPerfil1();
@@ -214,6 +218,13 @@ botaoEntrada2.addEventListener("click", function () {
     listaEntradas2.appendChild(novoCampo);
 });
 
+botaoRemoverEntrada2.addEventListener("click", function () {
+    if (listaEntradas2.lastElementChild) {
+        listaEntradas2.removeChild(listaEntradas2.lastElementChild);
+        calcularPerfil2();
+    }
+});
+
 botaoDivida1.addEventListener("click", function () {
     const novaDivida = criarCampoDivida(1);
     listaDividas1.appendChild(novaDivida);
@@ -229,6 +240,13 @@ botaoRemoverDivida1.addEventListener("click", function () {
 botaoDivida2.addEventListener("click", function () {
     const novaDivida = criarCampoDivida(2);
     listaDividas2.appendChild(novaDivida);
+});
+
+botaoRemoverDivida2.addEventListener("click", function () {
+    if (listaDividas2.lastElementChild) {
+        listaDividas2.removeChild(listaDividas2.lastElementChild);
+        calcularPerfil2();
+    }
 });
 
 calcularPerfil1();
