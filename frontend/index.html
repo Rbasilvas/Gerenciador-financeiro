@@ -15,13 +15,13 @@
 
         <main>
             <section class="abas">
-                <button class="aba ativa">Controle Financeiro</button>
-                <button class="aba">Metas</button>
-                <button class="aba">Investimentos</button>
-                <button class="aba">Dashboard</button>
+                <button class="aba ativa" data-aba="controle">Controle Financeiro</button>
+                <button class="aba" data-aba="metas">Metas</button>
+                <button class="aba" data-aba="investimentos">Investimentos</button>
+                <button class="aba" data-aba="dashboard">Dashboard</button>
             </section>
 
-            <section class="conteudo">
+            <section class="conteudo tab-conteudo ativa" id="aba-controle">
                 <div class="painel-duplo">
 
                     <div class="bloco-financeiro">
@@ -86,7 +86,7 @@
                             <button class="botao-adicionar" type="button" id="botaoDivida1">+ Dívidas</button>
                             <button class="botao-remover" type="button" id="botaoRemoverDivida1">- Dívidas</button>
                         </div>
-            
+
                         <div class="resumo-box" id="totalDividas1">
                             <strong>Total de dívidas:</strong> R$ 0,00
                         </div>
@@ -168,6 +168,132 @@
                         </div>
                     </div>
 
+                </div>
+            </section>
+
+            <section class="conteudo-investimentos tab-conteudo" id="aba-investimentos">
+                <h2>Investimentos</h2>
+                <p class="subtitulo-investimentos">Área de acompanhamento de FIIs, ações, renda fixa e tesouro direto.</p>
+
+                <div class="grid-investimentos">
+
+                    <div class="card-investimento">
+                        <h3>FIIs</h3>
+
+                        <label for="fiiNome">Fundo Imobiliário</label>
+                        <select id="fiiNome">
+                            <option value="">Selecione um FII</option>
+                            <option value="HGLG11">HGLG11</option>
+                            <option value="MXRF11">MXRF11</option>
+                            <option value="XPLG11">XPLG11</option>
+                            <option value="VISC11">VISC11</option>
+                        </select>
+
+                        <label for="fiiQuantidade">Quantidade</label>
+                        <input type="number" id="fiiQuantidade" placeholder="0">
+
+                        <label for="fiiDividendos">Dividendo por cota</label>
+                        <input type="number" id="fiiDividendos" placeholder="0.00">
+
+                        <label for="fiiTipo">Tipo do FII</label>
+                        <input type="text" id="fiiTipo" placeholder="Papel, Tijolo ou Híbrido" readonly>
+
+                        <div class="resumo-box" id="totalDividendosFii">
+                            <strong>Renda mensal estimada:</strong> R$ 0,00
+                        </div>
+                    </div>
+
+                    <div class="card-investimento">
+                        <h3>Ações</h3>
+
+                        <label for="acaoNome">Ação</label>
+                        <select id="acaoNome">
+                            <option value="">Selecione uma ação</option>
+                            <option value="BBAS3">BBAS3</option>
+                            <option value="ITSA4">ITSA4</option>
+                            <option value="TAEE11">TAEE11</option>
+                            <option value="PETR4">PETR4</option>
+                        </select>
+
+                        <label for="acaoQuantidade">Quantidade</label>
+                        <input type="number" id="acaoQuantidade" placeholder="0">
+
+                        <label for="acaoPrecoMedio">Preço médio</label>
+                        <input type="number" id="acaoPrecoMedio" placeholder="0.00">
+
+                        <label for="acaoValorIntrinseco">Projeção Benjamin Graham</label>
+                        <input type="text" id="acaoValorIntrinseco" placeholder="Em breve" readonly>
+
+                        <div class="resumo-box">
+                            <strong>Status:</strong> Estrutura inicial criada
+                        </div>
+                    </div>
+
+                    <div class="card-investimento">
+                        <h3>Renda Fixa</h3>
+
+                        <label for="rendaFixaTipo">Tipo</label>
+                        <select id="rendaFixaTipo">
+                            <option value="">Selecione</option>
+                            <option value="CDB">CDB</option>
+                            <option value="LCI">LCI</option>
+                            <option value="LCA">LCA</option>
+                            <option value="CRI">CRI</option>
+                        </select>
+
+                        <label for="rendaFixaValor">Valor aplicado</label>
+                        <input type="number" id="rendaFixaValor" placeholder="0.00">
+
+                        <label for="rendaFixaTaxa">Taxa</label>
+                        <input type="text" id="rendaFixaTaxa" placeholder="Ex: 110% do CDI">
+
+                        <label for="rendaFixaVencimento">Vencimento</label>
+                        <input type="text" id="rendaFixaVencimento" placeholder="Ex: 2028">
+
+                        <div class="resumo-box">
+                            <strong>Status:</strong> Estrutura inicial criada
+                        </div>
+                    </div>
+
+                    <div class="card-investimento">
+                        <h3>Tesouro Direto</h3>
+
+                        <label for="tesouroTipo">Título</label>
+                        <select id="tesouroTipo">
+                            <option value="">Selecione</option>
+                            <option value="Tesouro Selic">Tesouro Selic</option>
+                            <option value="Tesouro IPCA">Tesouro IPCA+</option>
+                            <option value="Tesouro Prefixado">Tesouro Prefixado</option>
+                        </select>
+
+                        <label for="tesouroValor">Valor investido</label>
+                        <input type="number" id="tesouroValor" placeholder="0.00">
+
+                        <label for="tesouroTaxa">Taxa contratada</label>
+                        <input type="text" id="tesouroTaxa" placeholder="Ex: IPCA + 6,5%">
+
+                        <label for="tesouroVencimento">Vencimento</label>
+                        <input type="text" id="tesouroVencimento" placeholder="Ex: 2035">
+
+                        <div class="resumo-box">
+                            <strong>Status:</strong> Estrutura inicial criada
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="tab-conteudo" id="aba-metas">
+                <div class="conteudo-simples">
+                    <h2>Metas</h2>
+                    <p>Área reservada para metas financeiras. Vamos construir essa parte depois.</p>
+                </div>
+            </section>
+
+            <section class="tab-conteudo" id="aba-dashboard">
+                <div class="conteudo-simples">
+                    <h2>Dashboard</h2>
+                    <p>Área reservada para indicadores e visão consolidada. Vamos construir essa parte depois.</p>
                 </div>
             </section>
         </main>

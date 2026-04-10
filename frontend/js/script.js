@@ -251,3 +251,21 @@ botaoRemoverDivida2.addEventListener("click", function () {
 
 calcularPerfil1();
 calcularPerfil2();
+const botoesAbas = document.querySelectorAll(".aba");
+const conteudosAbas = document.querySelectorAll(".tab-conteudo");
+
+botoesAbas.forEach((botao) => {
+    botao.addEventListener("click", function () {
+        const abaDestino = botao.getAttribute("data-aba");
+
+        botoesAbas.forEach((item) => item.classList.remove("ativa"));
+        conteudosAbas.forEach((conteudo) => conteudo.classList.remove("ativa"));
+
+        botao.classList.add("ativa");
+
+        const conteudoSelecionado = document.getElementById(`aba-${abaDestino}`);
+        if (conteudoSelecionado) {
+            conteudoSelecionado.classList.add("ativa");
+        }
+    });
+});
