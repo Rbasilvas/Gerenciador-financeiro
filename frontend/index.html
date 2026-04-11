@@ -14,12 +14,18 @@
         </header>
 
         <main>
-            <section class="abas">
-                <button class="aba ativa" data-aba="controle">Controle Financeiro</button>
-                <button class="aba" data-aba="metas">Metas</button>
-                <button class="aba" data-aba="investimentos">Investimentos</button>
-                <button class="aba" data-aba="dashboard">Dashboard</button>
-            </section>
+            <div class="topo-acoes">
+    <section class="abas">
+        <button class="aba ativa" data-aba="controle">Controle Financeiro</button>
+        <button class="aba" data-aba="metas">Metas</button>
+        <button class="aba" data-aba="investimentos">Investimentos</button>
+        <button class="aba" data-aba="dashboard">Dashboard</button>
+    </section>
+
+    <button class="botao-salvar-geral" type="button" id="botaoSalvar">
+        💾 Salvar
+    </button>
+</div>
 
             <section class="conteudo tab-conteudo ativa" id="aba-controle">
                 <div class="painel-duplo">
@@ -30,38 +36,88 @@
                         <label for="nome1">Nome</label>
                         <input type="text" id="nome1" placeholder="Digite o nome">
 
-                        <label for="mes1">Mês</label>
-                        <select id="mes1">
-                            <option>Janeiro</option>
-                            <option>Fevereiro</option>
-                            <option>Março</option>
-                            <option>Abril</option>
-                            <option>Maio</option>
-                            <option>Junho</option>
-                            <option>Julho</option>
-                            <option>Agosto</option>
-                            <option>Setembro</option>
-                            <option>Outubro</option>
-                            <option>Novembro</option>
-                            <option>Dezembro</option>
-                        </select>
+                        <div class="linha-dupla">
+    <div>
+        <label for="ano1">Ano</label>
+        <select id="ano1">
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+            <option>2029</option>
+            <option>2030</option>
+            <option>2031</option>
+            <option>2032</option>
+            <option>2033</option>
+            <option>2034</option>
+            <option>2035</option>
+            <option>2036</option>
+            <option>2037</option>
+            <option>2038</option>
+            <option>2039</option>
+            <option>2040</option>
+            <option>2041</option>
+            <option>2042</option>
+            <option>2043</option>
+            <option>2044</option>
+            <option>2045</option>
+            <option>2046</option>
+            <option>2047</option>
+            <option>2048</option>
+            <option>2049</option>
+            <option>2050</option>
+        </select>
+    </div>
 
-                        <h3>Entradas</h3>
+    <div>
+        <label for="mes1">Mês</label>
+        <select id="mes1">
+            <option>Janeiro</option>
+            <option>Fevereiro</option>
+            <option>Março</option>
+            <option>Abril</option>
+            <option>Maio</option>
+            <option>Junho</option>
+            <option>Julho</option>
+            <option>Agosto</option>
+            <option>Setembro</option>
+            <option>Outubro</option>
+            <option>Novembro</option>
+            <option>Dezembro</option>
+        </select>
+    </div>
+</div>
 
-                        <label for="salario1">Salário</label>
-                        <input type="number" id="salario1" placeholder="0.00">
+<h3>Entradas</h3>
 
-                        <label for="extras1">Horas extras</label>
-                        <input type="number" id="extras1" placeholder="0.00">
+<div class="linha-dupla">
+    <div>
+        <label for="salario1">Salário</label>
+        <input type="number" id="salario1" placeholder="0.00">
+    </div>
 
-                        <label for="decimo1">Décimo terceiro</label>
-                        <input type="number" id="decimo1" placeholder="0.00">
+    <div>
+        <label for="extras1">Hrs extras</label>
+        <input type="number" id="extras1" placeholder="0.00">
+    </div>
+</div>
 
-                        <label for="plr1">PLR</label>
-                        <input type="number" id="plr1" placeholder="0.00">
+<div class="linha-dupla">
+    <div>
+        <label for="plr1">PLR</label>
+        <input type="number" id="plr1" placeholder="0.00">
+    </div>
 
-                        <label for="ferias1">Férias</label>
-                        <input type="number" id="ferias1" placeholder="0.00">
+    <div>
+        <label for="decimo1">Décimo 13</label>
+        <input type="number" id="decimo1" placeholder="0.00">
+    </div>
+</div>
+
+<div>
+    <label for="ferias1">Férias</label>
+    <input type="number" id="ferias1" placeholder="0.00">
+</div>
 
                         <div id="listaEntradas1"></div>
 
@@ -102,38 +158,88 @@
                         <label for="nome2">Nome</label>
                         <input type="text" id="nome2" placeholder="Digite o nome">
 
-                        <label for="mes2">Mês</label>
-                        <select id="mes2">
-                            <option>Janeiro</option>
-                            <option>Fevereiro</option>
-                            <option>Março</option>
-                            <option>Abril</option>
-                            <option>Maio</option>
-                            <option>Junho</option>
-                            <option>Julho</option>
-                            <option>Agosto</option>
-                            <option>Setembro</option>
-                            <option>Outubro</option>
-                            <option>Novembro</option>
-                            <option>Dezembro</option>
-                        </select>
+                        <div class="linha-dupla">
+    <div>
+        <label for="ano2">Ano</label>
+        <select id="ano2">
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+            <option>2029</option>
+            <option>2030</option>
+            <option>2031</option>
+            <option>2032</option>
+            <option>2033</option>
+            <option>2034</option>
+            <option>2035</option>
+            <option>2036</option>
+            <option>2037</option>
+            <option>2038</option>
+            <option>2039</option>
+            <option>2040</option>
+            <option>2041</option>
+            <option>2042</option>
+            <option>2043</option>
+            <option>2044</option>
+            <option>2045</option>
+            <option>2046</option>
+            <option>2047</option>
+            <option>2048</option>
+            <option>2049</option>
+            <option>2050</option>
+        </select>
+    </div>
 
-                        <h3>Entradas</h3>
+    <div>
+        <label for="mes2">Mês</label>
+        <select id="mes2">
+            <option>Janeiro</option>
+            <option>Fevereiro</option>
+            <option>Março</option>
+            <option>Abril</option>
+            <option>Maio</option>
+            <option>Junho</option>
+            <option>Julho</option>
+            <option>Agosto</option>
+            <option>Setembro</option>
+            <option>Outubro</option>
+            <option>Novembro</option>
+            <option>Dezembro</option>
+        </select>
+    </div>
+</div>
 
-                        <label for="salario2">Salário</label>
-                        <input type="number" id="salario2" placeholder="0.00">
+<h3>Entradas</h3>
 
-                        <label for="extras2">Horas extras</label>
-                        <input type="number" id="extras2" placeholder="0.00">
+<div class="linha-dupla">
+    <div>
+        <label for="salario2">Salário</label>
+        <input type="number" id="salario2" placeholder="0.00">
+    </div>
 
-                        <label for="decimo2">Décimo terceiro</label>
-                        <input type="number" id="decimo2" placeholder="0.00">
+    <div>
+        <label for="extras2">Hrs extras</label>
+        <input type="number" id="extras2" placeholder="0.00">
+    </div>
+</div>
 
-                        <label for="plr2">PLR</label>
-                        <input type="number" id="plr2" placeholder="0.00">
+<div class="linha-dupla">
+    <div>
+        <label for="plr2">PLR</label>
+        <input type="number" id="plr2" placeholder="0.00">
+    </div>
 
-                        <label for="ferias2">Férias</label>
-                        <input type="number" id="ferias2" placeholder="0.00">
+    <div>
+        <label for="decimo2">Décimo 13</label>
+        <input type="number" id="decimo2" placeholder="0.00">
+    </div>
+</div>
+
+<div>
+    <label for="ferias2">Férias</label>
+    <input type="number" id="ferias2" placeholder="0.00">
+</div>
 
                         <div id="listaEntradas2"></div>
 
@@ -299,6 +405,7 @@
         </main>
     </div>
 
-    <script src="./js/script.js"></script>
-</body>
-</html>
+   <button id="botaoTopo" class="botao-topo" type="button">↑</button>
+   <script src="./js/script.js"></script> 
+   </body>
+   </html>

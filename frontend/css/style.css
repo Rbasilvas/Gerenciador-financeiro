@@ -271,3 +271,89 @@ header p {
 .card-investimento h3 {
     margin-bottom: 12px;
 }
+.linha-dupla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    align-items: end;
+}
+
+.linha-dupla label {
+    margin-top: 8px;
+}
+
+.bloco-financeiro input,
+.bloco-financeiro select {
+    margin-bottom: 8px;
+}
+
+.bloco-financeiro {
+    padding: 16px;
+}
+.topo-acoes {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.topo-acoes .abas {
+    margin-bottom: 0;
+}
+
+.botao-salvar-geral {
+    margin-left: auto;
+}
+
+.botao-salvar-geral {
+    background-color: #0f766e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    min-width: 130px;
+    height: 44px;
+    padding: 0 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.botao-salvar-geral:hover {
+    opacity: 0.92;
+}
+
+.botao-topo {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 46px;
+    height: 46px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(37, 99, 235, 0.55);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+
+    z-index: 999;
+}
+
+.botao-topo.visivel {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.botao-topo:hover {
+    transform: scale(1.08);
+    background-color: rgba(37, 99, 235, 0.85);
+}
