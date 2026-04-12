@@ -357,3 +357,39 @@ header p {
     transform: scale(1.08);
     background-color: rgba(37, 99, 235, 0.85);
 }
+.item-investimento-dinamico {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 14px;
+    background-color: #f9fafb;
+}
+
+.item-investimento-dinamico .linha-dupla {
+    margin-bottom: 8px;
+}
+.linha-tripla-fii {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: end;
+    margin-bottom: 8px;
+}
+
+.resumo-investimento {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.item-investimento-dinamico label {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+.item-investimento-dinamico input,
+.item-investimento-dinamico select {
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    font-size: 13px;
+}

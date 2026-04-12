@@ -284,30 +284,19 @@
                 <div class="grid-investimentos">
 
                     <div class="card-investimento">
-                        <h3>FIIs</h3>
+                    <h3>FIIs</h3>
 
-                        <label for="fiiNome">Fundo Imobiliário</label>
-                        <select id="fiiNome">
-                            <option value="">Selecione um FII</option>
-                            <option value="HGLG11">HGLG11</option>
-                            <option value="MXRF11">MXRF11</option>
-                            <option value="XPLG11">XPLG11</option>
-                            <option value="VISC11">VISC11</option>
-                        </select>
+                    <div id="listaFiis"></div>
 
-                        <label for="fiiQuantidade">Quantidade</label>
-                        <input type="number" id="fiiQuantidade" placeholder="0">
+                    <div class="grupo-botoes">
+                         <button class="botao-adicionar" type="button" id="botaoAdicionarFii">+ FIIs</button>
+                         <button class="botao-remover" type="button" id="botaoRemoverFii">- FIIs</button>
+                   </div>
 
-                        <label for="fiiDividendos">Dividendo por cota</label>
-                        <input type="number" id="fiiDividendos" placeholder="0.00">
-
-                        <label for="fiiTipo">Tipo do FII</label>
-                        <input type="text" id="fiiTipo" placeholder="Papel, Tijolo ou Híbrido" readonly>
-
-                        <div class="resumo-box" id="totalDividendosFii">
-                            <strong>Renda mensal estimada:</strong> R$ 0,00
-                        </div>
-                    </div>
+    <div class="resumo-box" id="totalDividendosFii">
+        <strong>Renda mensal estimada:</strong> R$ 0,00
+    </div>
+</div>
 
                     <div class="card-investimento">
                         <h3>Ações</h3>
